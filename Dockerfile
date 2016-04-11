@@ -13,7 +13,7 @@ RUN \
   wget https://repo.percona.com/apt/percona-release_0.1-3.$(lsb_release -sc)_all.deb && \
   dpkg -i percona-release_0.1-3.$(lsb_release -sc)_all.deb && \
   apt-get update -qq && \
-  apt-get install -qq -y nano rsync nginx telnet git net-tools php5-fpm php5-curl php5-mysqlnd supervisor sudo percona-server-server-5.6 && \
+  apt-get install -qq -y nano make rsync nginx telnet git net-tools php5-fpm php5-curl php5-mysqlnd supervisor sudo percona-server-server-5.6 php5-xdebug && \
   rm -f percona-release_0.1-3.$(lsb_release -sc)_all.deb && \
   apt-get autoremove && \
   apt-get clean && \
