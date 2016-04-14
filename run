@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo docker run \
+--name $1 \
+-d $1:latest
